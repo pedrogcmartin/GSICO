@@ -3,7 +3,7 @@
    <br />
 
   <p align="center">
-   <img src="imgs/gscodec.svg" width="1000">
+   <img src="imgs/gscodec.svg">
     <br />
     <br />
   </p>
