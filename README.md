@@ -3,7 +3,7 @@
    <br />
 
   <p align="center">
-   <object data="https://raw.githubusercontent.com/pedrogcmartin/SGS/main/imgs/gscodec.pdf" type="application/pdf" width="100%" height="600px"></object>
+   <img src="https://pedrogcmartin/SGS/blob/main/imgs/gscodec.svg">
     <br />
     <br />
   </p>
