@@ -9,8 +9,6 @@
   </p>
 </div>
 
-### Code
-
 The SGS code implementation is available in this repository. This repository is mainly based on the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering" and the paper "Compact 3D Scene Representation via Self-Organizing Gaussian Grids".
 
 ## Cloning the Repository
@@ -43,7 +41,7 @@ micromamba activate sgs
 
 ## JPEG XL Installation
 
-The codec makes use of JPEG XL encoder and decoder. Installation with [jpeg-xl](https://gitlab.com/wg1/jpeg-xl).
+The codec makes use of JPEG XL encoder and decoder. For installation use the [jpeg-xl](https://gitlab.com/wg1/jpeg-xl) reference software.
 
 ## Running
 
