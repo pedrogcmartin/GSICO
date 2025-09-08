@@ -1,0 +1,1 @@
+Namespace(model_path='/media/pedro/5e563db5-5ede-4fd6-8484-570f2f48099a/models/Self-Organizing-Gaussians/output/tandt/truck', source_path='../Self-Organizing-Gaussians_old/data/tandt/truck', images='images', resolution='-1', sh_degree=3, white_background=False, eval=True)

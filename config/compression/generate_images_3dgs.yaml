@@ -1,0 +1,53 @@
+experiments:
+  - name: "png_quant_sh_ours_lossless_3dgs"
+    attributes:
+      - name: "_xyz"
+        method: "png"
+        normalize: false
+        contract: true
+        quantize: 14
+        params:
+          dtype: "uint16"
+      - name: "_features_dc"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_features_rest"
+        method: "png"
+        normalize: false
+        contract: false
+        quantizeY1: 6
+        quantizeY2: 5
+        quantizeY3: 5
+        quantizeU1: 0
+        quantizeU2: 0
+        quantizeU3: 0
+        quantizeV1: 0
+        quantizeV2: 0
+        quantizeV3: 0
+        params:
+          dtype: "uint8"
+      - name: "_scaling"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_rotation"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_opacity"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 6
+        params:
+          dtype: "uint8"

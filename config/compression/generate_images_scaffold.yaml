@@ -1,0 +1,45 @@
+experiments:
+  - name: "png_quant_sh_ours_lossless_scaffold"
+    attributes:
+      - name: "_xyz"
+        method: "png"
+        normalize: false
+        contract: true
+        quantize: 16
+        params:
+          dtype: "uint16"
+      - name: "_features_offset"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_features_anchor"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_scaling"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_rotation"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"
+      - name: "_opacity"
+        method: "png"
+        normalize: false
+        contract: false
+        quantize: 8
+        params:
+          dtype: "uint8"

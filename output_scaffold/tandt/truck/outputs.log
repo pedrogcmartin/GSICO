@@ -1,0 +1,24 @@
+2025-07-07 15:27:49,346 - INFO: args: Namespace(add_color_dist=False, add_cov_dist=False, add_opacity_dist=False, appearance_dim=0, appearance_lr_delay_mult=0.01, appearance_lr_final=0.0005, appearance_lr_init=0.05, appearance_lr_max_steps=30000, checkpoint_iterations=[], compute_cov3D_python=False, convert_SHs_python=False, data_device='cuda', debug=False, debug_from=-1, densify_grad_threshold=0.0002, detect_anomaly=False, ds=1, eval=True, feat_dim=32, feature_lr=0.0075, gpu='0', images='images', ip='127.0.0.1', iterations=30000, lambda_dssim=0.2, lod=0, lowpoly=False, min_opacity=0.005, mlp_color_lr_delay_mult=0.01, mlp_color_lr_final=5e-05, mlp_color_lr_init=0.008, mlp_color_lr_max_steps=30000, mlp_cov_lr_delay_mult=0.01, mlp_cov_lr_final=0.004, mlp_cov_lr_init=0.004, mlp_cov_lr_max_steps=30000, mlp_featurebank_lr_delay_mult=0.01, mlp_featurebank_lr_final=1e-05, mlp_featurebank_lr_init=0.01, mlp_featurebank_lr_max_steps=30000, mlp_opacity_lr_delay_mult=0.01, mlp_opacity_lr_final=2e-05, mlp_opacity_lr_init=0.002, mlp_opacity_lr_max_steps=30000, model_path='output/tandt/truck', n_offsets=10, offset_lr_delay_mult=0.01, offset_lr_final=0.0001, offset_lr_init=0.01, offset_lr_max_steps=30000, opacity_lr=0.02, percent_dense=0.01, port=15501, position_lr_delay_mult=0.01, position_lr_final=0.0, position_lr_init=0.0, position_lr_max_steps=30000, quiet=False, ratio=1, resolution=1, rotation_lr=0.002, save_iterations=[30000, 30000], scaling_lr=0.007, sh_degree=3, source_path='../Self-Organizing-Gaussians_old/data/tandt/truck', split=0, start_checkpoint=None, start_stat=500, success_threshold=0.8, test_iterations=[30000], undistorted=False, update_depth=3, update_from=1500, update_hierachy_factor=4, update_init_factor=16, update_interval=100, update_until=15000, use_feat_bank=False, use_wandb=False, voxel_size=0.01, warmup=False, white_background=False)
+2025-07-07 15:27:49,347 - INFO: using GPU 0
+2025-07-07 15:27:49,347 - INFO: Optimizing output/tandt/truck
+2025-07-07 15:36:01,423 - INFO: 
+[ITER 30000] Evaluating test: L1 0.029034450242761523 PSNR 25.914710581302643
+2025-07-07 15:36:01,437 - INFO: 
+[ITER 30000] Evaluating train: L1 0.022092443332076075 PSNR 28.311852645874026
+2025-07-07 15:36:01,444 - INFO: 
+[ITER 30000] Saving Gaussians
+2025-07-07 15:36:03,044 - INFO: 
+Training complete.
+2025-07-07 15:36:03,044 - INFO: 
+Starting Rendering~
+2025-07-07 15:36:18,150 - INFO: Test FPS: [1;35m259.33038[0m
+2025-07-07 15:36:18,151 - INFO: 
+Rendering complete.
+2025-07-07 15:36:18,152 - INFO: 
+ Starting evaluation...
+2025-07-07 15:36:20,735 - INFO: model_paths: [1;35moutput/tandt/truck[0m
+2025-07-07 15:36:20,759 - INFO:   SSIM : [1;35m   0.8857549[0m
+2025-07-07 15:36:20,759 - INFO:   PSNR : [1;35m  25.9059677[0m
+2025-07-07 15:36:20,759 - INFO:   LPIPS: [1;35m   0.1443837[0m
+2025-07-07 15:36:20,762 - INFO: 
+Evaluating complete.
