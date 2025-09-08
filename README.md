@@ -3,7 +3,7 @@
    <br />
 
   <p align="center">
-   <embed src="https://raw.githubusercontent.com/pedrogcmartin/SGS/main/imgs/gscodec.pdf" type="application/pdf" width="100%" height="600px" />
+   <object data="https://raw.githubusercontent.com/pedrogcmartin/SGS/main/imgs/gscodec.pdf" type="application/pdf" width="100%" height="600px"></object>
     <br />
     <br />
   </p>
