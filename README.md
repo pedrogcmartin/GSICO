@@ -3,7 +3,7 @@
    <br />
 
   <p align="center">
-   <img src="https://github.com/pedrogcmartin/SGS/blob/main/imgs/gscodec.pdf">
+   <[Open PDF](https://github.com/pedrogcmartin/SGS/raw/main/imgs/gscodec.pdf)>
     <br />
     <br />
   </p>
