@@ -11,6 +11,53 @@
 
 The SGS code implementation is available in this repository. This repository is mainly based on the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering" and the paper "Compact 3D Scene Representation via Self-Organizing Gaussian Grids".
 
+## Qualitative results
+
+<p align="center">
+  <i>Visual comparison across scenes. Columns: GT (reference), baseline 3DGS / Scaffold-GS, and our codec applied to each baseline. 
+  Values under each image show PSNR (dB) and model size (MB).</i>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Scene</th>
+      <th>GT</th>
+      <th>3DGS</th>
+      <th>Ours w/ 3DGS</th>
+      <th>Scaffold-GS</th>
+      <th>Ours w/ Scaffold-GS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- truck -->
+    <tr>
+      <td><b>truck</b></td>
+      <td>
+        <img src="imgs/truck/reference.png" width="220" alt="truck GT"><br/>
+        –
+      </td>
+      <td>
+        <img src="imgs/truck/3DGS.png" width="220" alt="truck 3DGS"><br/>
+        25.82 dB<br/>395.0 MB
+      </td>
+      <td>
+        <img src="imgs/truck/ours3DGS.png" width="220" alt="truck ours 3DGS"><br/>
+        25.45 dB<br/>19.1 MB
+      </td>
+      <td>
+        <img src="imgs/truck/scaffold.png" width="220" alt="truck Scaffold-GS"><br/>
+        25.91 dB<br/>97.6 MB
+      </td>
+      <td>
+        <img src="imgs/truck/oursscaffold.png" width="220" alt="truck ours Scaffold-GS"><br/>
+        25.70 dB<br/>10.9 MB
+      </td>
+    </tr>
+    <!-- repeat structure for train, drjohnson, playroom, bicycle, kitchen -->
+  </tbody>
+</table>
+
 ## Cloning the Repository
 
 The repository contains submodules, thus please check it out with
