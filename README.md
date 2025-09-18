@@ -34,23 +34,23 @@ The SGS code implementation is available in this repository. This repository is 
     <tr>
       <td><b>truck</b></td>
       <td>
-        <img src="imgs/truck/reference.png" width="220" alt="truck GT"><br/>
+        <img src="imgs/truck/reference.png" width="220" alt="GT"><br/>
         –
       </td>
       <td>
-        <img src="imgs/truck/3DGS.png" width="220" alt="truck 3DGS"><br/>
+        <img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/>
         25.82 dB<br/>395.0 MB
       </td>
       <td>
-        <img src="imgs/truck/ours3DGS.png" width="220" alt="truck ours 3DGS"><br/>
+        <img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/>
         25.45 dB<br/>19.1 MB
       </td>
       <td>
-        <img src="imgs/truck/scaffold.png" width="220" alt="truck Scaffold-GS"><br/>
+        <img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/>
         25.91 dB<br/>97.6 MB
       </td>
       <td>
-        <img src="imgs/truck/oursscaffold.png" width="220" alt="truck ours Scaffold-GS"><br/>
+        <img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/>
         25.70 dB<br/>10.9 MB
       </td>
     </tr>
