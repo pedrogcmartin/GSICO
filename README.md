@@ -50,21 +50,21 @@ The SGS code implementation is available in this repository. This repository is 
       </td>
     </tr>
     <tr>
-      <td><b>truck</b></td>
+      <td>PSNR [dB] Size [MB]</td>
       <td>
-        –
+        <th>–</th>
       </td>
       <td>
-        25.82 dB<br/>395.0 MB
+        <th>25.82 dB<br/>395.0 MB</th>
       </td>
       <td>
-        25.45 dB<br/>19.1 MB
+        <th>25.45 dB<br/>19.1 MB</th>
       </td>
       <td>
-        25.91 dB<br/>97.6 MB
+        <th>25.91 dB<br/>97.6 MB</th>
       </td>
       <td>
-        25.70 dB<br/>10.9 MB
+        <th>25.70 dB<br/>10.9 MB</th>
       </td>
     </tr>
   </tbody>
