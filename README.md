@@ -40,9 +40,7 @@ The SGS code implementation is available in this repository. This repository is 
       <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
-      <td>PSNR [dB]<br/>
-          Size [MB]
-      </td>
+      <td width="120">PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
       <td align="center">25.82 dB<br/>395.0 MB</td>
       <td align="center">25.45 dB<br/>19.1 MB</td>
