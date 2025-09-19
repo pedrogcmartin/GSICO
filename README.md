@@ -30,31 +30,11 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <!-- truck -->
     <tr>
       <td><b>truck</b></td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/truck/reference.png" alt="GT" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/truck/3DGS.png" alt="3DGS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/truck/ours3DGS.png" alt="Ours w/ 3DGS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/truck/scaffold.png" alt="Scaffold-GS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/truck/oursscaffold.png" alt="Ours w/ Scaffold-GS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/truck/reference.png" alt="GT" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/truck/3DGS.png" alt="3DGS" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/truck/ours3DGS.png" alt="Ours w/ 3DGS" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/truck/scaffold.png" alt="Scaffold-GS" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/truck/oursscaffold.png" alt="Ours w/ Scaffold-GS" style="width:100%;height:100%;object-fit:cover;"></div></td>
     </tr>
     <tr>
       <td width="120">PSNR [dB]<br/>Size [MB]</td>
@@ -68,31 +48,11 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <!-- train -->
     <tr>
       <td><b>train</b></td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/train/reference.png" alt="GT" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/train/3DGS.png" alt="3DGS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/train/ours3DGS.png" alt="Ours w/ 3DGS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/train/scaffold.png" alt="Scaffold-GS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
-      <td align="center">
-        <div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <img src="imgs/train/oursscaffold.png" alt="Ours w/ Scaffold-GS" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/train/reference.png" alt="GT" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/train/3DGS.png" alt="3DGS" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/train/ours3DGS.png" alt="Ours w/ 3DGS" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/train/scaffold.png" alt="Scaffold-GS" style="width:100%;height:100%;object-fit:cover;"></div></td>
+      <td align="center"><div style="width:220px;height:123px;overflow:hidden;display:flex;align-items:center;justify-content:center;"><img src="imgs/train/oursscaffold.png" alt="Ours w/ Scaffold-GS" style="width:100%;height:100%;object-fit:cover;"></div></td>
     </tr>
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
@@ -104,6 +64,7 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
   </tbody>
 </table>
+
 
 
 ## Cloning the Repository
