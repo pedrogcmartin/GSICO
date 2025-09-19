@@ -44,18 +44,16 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td align="center">25.91 dB<br/>97.6 MB</td>
       <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
-
-    <!-- train -->
     <tr>
       <td><b>train</b></td>
-      <td><img src="imgs/train/reference.png" width="220" alt="GT"><br/></td>
-      <td><img src="imgs/train/3DGS.png" width="220" alt="3DGS"><br/></td>
-      <td><img src="imgs/train/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
-      <td><img src="imgs/train/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
-      <td><img src="imgs/train/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
+      <td><img src="imgs/train/reference.png"</td>
+      <td><img src="imgs/train/3DGS.png"</td>
+      <td><img src="imgs/train/ours3DGS.png"</td>
+      <td><img src="imgs/train/scaffold.png"</td>
+      <td><img src="imgs/train/oursscaffold.png"</td>
     </tr>
     <tr>
-      <td width="105">PSNR [dB]<br/>Size [MB]</td>
+      <td>PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
       <td align="center">25.82 dB<br/>395.0 MB</td>
       <td align="center">25.45 dB<br/>19.1 MB</td>
