@@ -33,39 +33,19 @@ The SGS code implementation is available in this repository. This repository is 
     <!-- truck -->
     <tr>
       <td><b>truck</b></td>
-      <td>
-        <img src="imgs/truck/reference.png" width="220" alt="GT"><br/>
-      </td>
-      <td>
-        <img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/>
-      </td>
-      <td>
-        <img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/>
-      </td>
-      <td>
-        <img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/>
-      </td>
-      <td>
-        <img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/>
-      </td>
+      <td><img src="imgs/truck/reference.png" width="220" alt="GT"><br/></td>
+      <td><img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/></td>
+      <td><img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
+      <td><img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
+      <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
-      <td>PSNR [dB] Size [MB]</td>
-      <td>
-        <th>–</th>
-      </td>
-      <td>
-        <th>25.82 dB<br/>395.0 MB</th>
-      </td>
-      <td>
-        <th>25.45 dB<br/>19.1 MB</th>
-      </td>
-      <td>
-        <th>25.91 dB<br/>97.6 MB</th>
-      </td>
-      <td>
-        <th>25.70 dB<br/>10.9 MB</th>
-      </td>
+      <td>PSNR [dB]<br/>Size [MB]</td>
+      <td align="center">–</td>
+      <td align="center">25.82 dB<br/>395.0 MB</td>
+      <td align="center">25.45 dB<br/>19.1 MB</td>
+      <td align="center">25.91 dB<br/>97.6 MB</td>
+      <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
   </tbody>
 </table>
