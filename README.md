@@ -45,11 +45,11 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
     <tr>
       <td><b>train</b></td>
-      <td><img src="imgs/train/reference.png" width="220" height="123"</td>
-      <td><img src="imgs/train/3DGS.png" width="220" height="123"</td>
-      <td><img src="imgs/train/ours3DGS.png" width="220" height="123"</td>
-      <td><img src="imgs/train/scaffold.png" width="220" height="123"</td>
-      <td><img src="imgs/train/oursscaffold.png" width="220" height="123"</td>
+      <td><img src="imgs/train/reference.png" width="220" height="123" alt="GT"></td>
+      <td><img src="imgs/train/3DGS.png" width="220" height="123" alt="3DGS"></td>
+      <td><img src="imgs/train/ours3DGS.png" width="220" height="123" alt="ours w/ 3DGS"></td>
+      <td><img src="imgs/train/scaffold.png" width="220" height="123" alt="Scaffold-GS"></td>
+      <td><img src="imgs/train/oursscaffold.png" width="220" height="123" alt="ours w/ Scaffold-GS"></td>
     </tr>
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
