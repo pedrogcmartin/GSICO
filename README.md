@@ -27,7 +27,6 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
   </thead>
   <tbody>
-    <!-- truck -->
     <tr>
       <td><b>truck</b></td>
       <td><img src="imgs/truck/reference.png" width="220" alt="GT"><br/></td>
@@ -46,11 +45,11 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
     <tr>
       <td><b>train</b></td>
-      <td><img src="imgs/train/reference.png"</td>
-      <td><img src="imgs/train/3DGS.png"</td>
-      <td><img src="imgs/train/ours3DGS.png"</td>
-      <td><img src="imgs/train/scaffold.png"</td>
-      <td><img src="imgs/train/oursscaffold.png"</td>
+      <td><img src="imgs/train/reference.png" width="220"</td>
+      <td><img src="imgs/train/3DGS.png" width="220"</td>
+      <td><img src="imgs/train/ours3DGS.png" width="220"</td>
+      <td><img src="imgs/train/scaffold.png" width="220"</td>
+      <td><img src="imgs/train/oursscaffold.png" width="220"</td>
     </tr>
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
