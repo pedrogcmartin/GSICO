@@ -13,10 +13,7 @@ The SGS code implementation is available in this repository. This repository is 
 
 ## Qualitative results
 
-<p align="center">
-  <i>Visual comparison across scenes. Columns: GT (reference), baseline 3DGS / Scaffold-GS, and our codec applied to each baseline. 
-  Values under each image show PSNR (dB) and model size (MB).</i>
-</p>
+Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/Scaffold-GS), and our codec applied to each baseline. Values under each image show PSNR (in dB) and model size (in megabytes).
 
 <table>
   <thead>
@@ -38,6 +35,24 @@ The SGS code implementation is available in this repository. This repository is 
       <td><img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
       <td><img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
       <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
+    </tr>
+    <tr>
+      <td width="105">PSNR [dB]<br/>Size [MB]</td>
+      <td align="center">–</td>
+      <td align="center">25.82 dB<br/>395.0 MB</td>
+      <td align="center">25.45 dB<br/>19.1 MB</td>
+      <td align="center">25.91 dB<br/>97.6 MB</td>
+      <td align="center">25.70 dB<br/>10.9 MB</td>
+    </tr>
+
+    <!-- train -->
+    <tr>
+      <td><b>train</b></td>
+      <td><img src="imgs/train/reference.png" width="220" alt="GT"><br/></td>
+      <td><img src="imgs/train/3DGS.png" width="220" alt="3DGS"><br/></td>
+      <td><img src="imgs/train/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
+      <td><img src="imgs/train/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
+      <td><img src="imgs/train/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
       <td width="105">PSNR [dB]<br/>Size [MB]</td>
