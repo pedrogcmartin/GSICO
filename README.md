@@ -37,12 +37,12 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
-      <td width="105">PSNR [dB]<br/>Size [MB]</td>
-      <td align="center">–</td>
-      <td align="center">25.82 dB<br/>395.0 MB</td>
-      <td align="center">25.45 dB<br/>19.1 MB</td>
-      <td align="center">25.91 dB<br/>97.6 MB</td>
-      <td align="center">25.70 dB<br/>10.9 MB</td>
+      <td><small>PSNR [dB]<br/>Size [MB]</small></td>
+      <td align="center"><small>–</small></td>
+      <td align="center"><small>25.82 dB<br/>395.0 MB</small></td>
+      <td align="center"><small>25.45 dB<br/>19.1 MB</small></td>
+      <td align="center"><small>25.91 dB<br/>97.6 MB</small></td>
+      <td align="center"><small>25.70 dB<br/>10.9 MB</small></td>
     </tr>
     <!-- Train row -->
     <tr>
@@ -63,7 +63,7 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
     <!-- Drjohnson row -->
     <tr>
-      <td><b>truck</b></td>
+      <td><b>drjohnson</b></td>
       <td><img src="imgs/drjohnson/reference.png" width="220" alt="GT"><br/></td>
       <td><img src="imgs/drjohnson/3DGS.png" width="220" alt="3DGS"><br/></td>
       <td><img src="imgs/drjohnson/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
@@ -80,7 +80,7 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
     <!-- Playroom row -->
     <tr>
-      <td><b>train</b></td>
+      <td><b>playroom</b></td>
       <td><img src="imgs/playroom/reference.png" width="220" alt="GT"></td>
       <td><img src="imgs/playroom/3DGS.png" width="220" alt="3DGS"></td>
       <td><img src="imgs/playroom/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
@@ -97,7 +97,7 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
     <!-- Bicycle row -->
     <tr>
-      <td><b>truck</b></td>
+      <td><b>bicycle</b></td>
       <td><img src="imgs/bicycle/reference.png" width="220" alt="GT"><br/></td>
       <td><img src="imgs/bicycle/3DGS.png" width="220" alt="3DGS"><br/></td>
       <td><img src="imgs/bicycle/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
@@ -114,7 +114,7 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     </tr>
     <!-- Kitchen row -->
     <tr>
-      <td><b>train</b></td>
+      <td><b>kitchen</b></td>
       <td><img src="imgs/kitchen/reference.png" width="220" alt="GT"></td>
       <td><img src="imgs/kitchen/3DGS.png" width="220" alt="3DGS"></td>
       <td><img src="imgs/kitchen/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
