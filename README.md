@@ -37,12 +37,12 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
-      <td><small>PSNR [dB]<br/>Size [MB]</small></td>
-      <td align="center"><small>–</small></td>
-      <td align="center"><small>25.82 dB<br/>395.0 MB</small></td>
-      <td align="center"><small>25.45 dB<br/>19.1 MB</small></td>
-      <td align="center"><small>25.91 dB<br/>97.6 MB</small></td>
-      <td align="center"><small>25.70 dB<br/>10.9 MB</small></td>
+      <td>PSNR [dB]<br/>Size [MB]</td>
+      <td align="center">–</td>
+      <td align="center">25.82 dB<br/>395.0 MB</td>
+      <td align="center">25.45 dB<br/>19.1 MB</td>
+      <td align="center">25.91 dB<br/>97.6 MB</td>
+      <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
     <!-- Train row -->
     <tr>
@@ -56,10 +56,10 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
-      <td align="center">25.82 dB<br/>395.0 MB</td>
-      <td align="center">25.45 dB<br/>19.1 MB</td>
-      <td align="center">25.91 dB<br/>97.6 MB</td>
-      <td align="center">25.70 dB<br/>10.9 MB</td>
+      <td align="center">21.93 dB<br/>217.3 MB</td>
+      <td align="center">21.55 dB<br/>10.9 MB</td>
+      <td align="center">22.35 dB<br/>62.3 MB</td>
+      <td align="center">22.23 dB<br/>8.9 MB</td>
     </tr>
     <!-- Drjohnson row -->
     <tr>
@@ -73,10 +73,10 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <tr>
       <td width="105">PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
-      <td align="center">25.82 dB<br/>395.0 MB</td>
-      <td align="center">25.45 dB<br/>19.1 MB</td>
-      <td align="center">25.91 dB<br/>97.6 MB</td>
-      <td align="center">25.70 dB<br/>10.9 MB</td>
+      <td align="center">28.97 dB<br/>232.9 MB</td>
+      <td align="center">28.67 dB<br/>11.9 MB</td>
+      <td align="center">29.75 dB<br/>62.7 MB</td>
+      <td align="center">29.63 dB<br/>7.0 MB</td>
     </tr>
     <!-- Playroom row -->
     <tr>
@@ -90,10 +90,10 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
-      <td align="center">25.82 dB<br/>395.0 MB</td>
-      <td align="center">25.45 dB<br/>19.1 MB</td>
-      <td align="center">25.91 dB<br/>97.6 MB</td>
-      <td align="center">25.70 dB<br/>10.9 MB</td>
+      <td align="center">30.19 dB<br/>213.6 MB</td>
+      <td align="center">29.64 dB<br/>10.7 MB</td>
+      <td align="center">30.92 dB<br/>52.0 MB</td>
+      <td align="center">30.73 dB<br/>5.6 MB</td>
     </tr>
     <!-- Bicycle row -->
     <tr>
@@ -107,10 +107,10 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <tr>
       <td width="105">PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
-      <td align="center">25.82 dB<br/>395.0 MB</td>
-      <td align="center">25.45 dB<br/>19.1 MB</td>
-      <td align="center">25.91 dB<br/>97.6 MB</td>
-      <td align="center">25.70 dB<br/>10.9 MB</td>
+      <td align="center">25.10 dB<br/>753.4 MB</td>
+      <td align="center">24.70 dB<br/>36.8 MB</td>
+      <td align="center">25.21 dB<br/>310.1 MB</td>
+      <td align="center">24.78 dB<br/>33.2 MB</td>
     </tr>
     <!-- Kitchen row -->
     <tr>
@@ -124,10 +124,10 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
       <td align="center">–</td>
-      <td align="center">25.82 dB<br/>395.0 MB</td>
-      <td align="center">25.45 dB<br/>19.1 MB</td>
-      <td align="center">25.91 dB<br/>97.6 MB</td>
-      <td align="center">25.70 dB<br/>10.9 MB</td>
+      <td align="center">31.34 dB<br/>301.7 MB</td>
+      <td align="center">29.24 dB<br/>16.0 MB</td>
+      <td align="center">31.60 dB<br/>107.0 MB</td>
+      <td align="center">31.04 dB<br/>11.9 MB</td>
     </tr>
   </tbody>
 </table>
