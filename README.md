@@ -61,14 +61,14 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td align="center">25.91 dB<br/>97.6 MB</td>
       <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
-    <!-- Truck row -->
+    <!-- Drjohnson row -->
     <tr>
       <td><b>truck</b></td>
-      <td><img src="imgs/truck/reference.png" width="220" alt="GT"><br/></td>
-      <td><img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/></td>
-      <td><img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
-      <td><img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
-      <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
+      <td><img src="imgs/drjohnson/reference.png" width="220" alt="GT"><br/></td>
+      <td><img src="imgs/drjohnson/3DGS.png" width="220" alt="3DGS"><br/></td>
+      <td><img src="imgs/drjohnson/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
+      <td><img src="imgs/drjohnson/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
+      <td><img src="imgs/drjohnson/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
       <td width="105">PSNR [dB]<br/>Size [MB]</td>
@@ -78,14 +78,14 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td align="center">25.91 dB<br/>97.6 MB</td>
       <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
-    <!-- Train row -->
+    <!-- Playroom row -->
     <tr>
       <td><b>train</b></td>
-      <td><img src="imgs/train/reference.png" width="220" alt="GT"></td>
-      <td><img src="imgs/train/3DGS.png" width="220" alt="3DGS"></td>
-      <td><img src="imgs/train/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
-      <td><img src="imgs/train/scaffold.png" width="220" alt="Scaffold-GS"></td>
-      <td><img src="imgs/train/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"></td>
+      <td><img src="imgs/playroom/reference.png" width="220" alt="GT"></td>
+      <td><img src="imgs/playroom/3DGS.png" width="220" alt="3DGS"></td>
+      <td><img src="imgs/playroom/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
+      <td><img src="imgs/playroom/scaffold.png" width="220" alt="Scaffold-GS"></td>
+      <td><img src="imgs/playroom/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"></td>
     </tr>
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
@@ -95,14 +95,14 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td align="center">25.91 dB<br/>97.6 MB</td>
       <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
-    <!-- Truck row -->
+    <!-- Bicycle row -->
     <tr>
       <td><b>truck</b></td>
-      <td><img src="imgs/truck/reference.png" width="220" alt="GT"><br/></td>
-      <td><img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/></td>
-      <td><img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
-      <td><img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
-      <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
+      <td><img src="imgs/bicycle/reference.png" width="220" alt="GT"><br/></td>
+      <td><img src="imgs/bicycle/3DGS.png" width="220" alt="3DGS"><br/></td>
+      <td><img src="imgs/bicycle/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
+      <td><img src="imgs/bicycle/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
+      <td><img src="imgs/bicycle/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
     </tr>
     <tr>
       <td width="105">PSNR [dB]<br/>Size [MB]</td>
@@ -112,14 +112,14 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td align="center">25.91 dB<br/>97.6 MB</td>
       <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
-    <!-- Train row -->
+    <!-- Kitchen row -->
     <tr>
       <td><b>train</b></td>
-      <td><img src="imgs/train/reference.png" width="220" alt="GT"></td>
-      <td><img src="imgs/train/3DGS.png" width="220" alt="3DGS"></td>
-      <td><img src="imgs/train/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
-      <td><img src="imgs/train/scaffold.png" width="220" alt="Scaffold-GS"></td>
-      <td><img src="imgs/train/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"></td>
+      <td><img src="imgs/kitchen/reference.png" width="220" alt="GT"></td>
+      <td><img src="imgs/kitchen/3DGS.png" width="220" alt="3DGS"></td>
+      <td><img src="imgs/kitchen/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
+      <td><img src="imgs/kitchen/scaffold.png" width="220" alt="Scaffold-GS"></td>
+      <td><img src="imgs/kitchen/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"></td>
     </tr>
     <tr>
       <td>PSNR [dB]<br/>Size [MB]</td>
