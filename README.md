@@ -44,7 +44,6 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <td align="center">25.91 dB<br/>97.6 MB</td>
       <td align="center">25.70 dB<br/>10.9 MB</td>
     </tr>
-
     <!-- Train row -->
     <tr>
       <td><b>train</b></td>
