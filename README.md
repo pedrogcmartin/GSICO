@@ -15,7 +15,55 @@ The SGS code implementation is available in this repository. This repository is 
 
 Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/Scaffold-GS), and our codec applied to each baseline. Values under each image show PSNR (in dB) and model size (in megabytes).
 
-<table> <thead> <tr> <th align="left">Scene</th> <th>GT</th> <th>3DGS</th> <th>Ours w/ 3DGS</th> <th>Scaffold-GS</th> <th>Ours w/ Scaffold-GS</th> </tr> </thead> <tbody> <tr> <td><b>truck</b></td> <td><img src="imgs/truck/reference.png" width="220" alt="GT"><br/></td> <td><img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/></td> <td><img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td> <td><img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/></td> <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td> </tr> <tr> <td width="105">PSNR [dB]<br/>Size [MB]</td> <td align="center">–</td> <td align="center">25.82 dB<br/>395.0 MB</td> <td align="center">25.45 dB<br/>19.1 MB</td> <td align="center">25.91 dB<br/>97.6 MB</td> <td align="center">25.70 dB<br/>10.9 MB</td> </tr> <tr> <td><b>train</b></td> <td><img src="imgs/train/reference.png" width="220"</td> <td><img src="imgs/train/3DGS.png" width="220"</td> <td><img src="imgs/train/ours3DGS.png" width="220"</td> <td><img src="imgs/train/scaffold.png" width="220"</td> <td><img src="imgs/train/oursscaffold.png" width="220"</td> </tr> <tr> <td>PSNR [dB]<br/>Size [MB]</td> <td align="center">–</td> <td align="center">25.82 dB<br/>395.0 MB</td> <td align="center">25.45 dB<br/>19.1 MB</td> <td align="center">25.91 dB<br/>97.6 MB</td> <td align="center">25.70 dB<br/>10.9 MB</td> </tr> </tbody> </table>
+<table>
+  <thead>
+    <tr>
+      <th align="left">Scene</th>
+      <th>GT</th>
+      <th>3DGS</th>
+      <th>Ours w/ 3DGS</th>
+      <th>Scaffold-GS</th>
+      <th>Ours w/ Scaffold-GS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Truck row -->
+    <tr>
+      <td><b>truck</b></td>
+      <td><img src="imgs/truck/reference.png" width="220" alt="GT"><br/></td>
+      <td><img src="imgs/truck/3DGS.png" width="220" alt="3DGS"><br/></td>
+      <td><img src="imgs/truck/ours3DGS.png" width="220" alt="ours w/ 3DGS"><br/></td>
+      <td><img src="imgs/truck/scaffold.png" width="220" alt="Scaffold-GS"><br/></td>
+      <td><img src="imgs/truck/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"><br/></td>
+    </tr>
+    <tr>
+      <td width="105">PSNR [dB]<br/>Size [MB]</td>
+      <td align="center">–</td>
+      <td align="center">25.82 dB<br/>395.0 MB</td>
+      <td align="center">25.45 dB<br/>19.1 MB</td>
+      <td align="center">25.91 dB<br/>97.6 MB</td>
+      <td align="center">25.70 dB<br/>10.9 MB</td>
+    </tr>
+
+    <!-- Train row -->
+    <tr>
+      <td><b>train</b></td>
+      <td><img src="imgs/train/reference.png" width="220" alt="GT"></td>
+      <td><img src="imgs/train/3DGS.png" width="220" alt="3DGS"></td>
+      <td><img src="imgs/train/ours3DGS.png" width="220" alt="ours w/ 3DGS"></td>
+      <td><img src="imgs/train/scaffold.png" width="220" alt="Scaffold-GS"></td>
+      <td><img src="imgs/train/oursscaffold.png" width="220" alt="ours w/ Scaffold-GS"></td>
+    </tr>
+    <tr>
+      <td>PSNR [dB]<br/>Size [MB]</td>
+      <td align="center">–</td>
+      <td align="center">25.82 dB<br/>395.0 MB</td>
+      <td align="center">25.45 dB<br/>19.1 MB</td>
+      <td align="center">25.91 dB<br/>97.6 MB</td>
+      <td align="center">25.70 dB<br/>10.9 MB</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
