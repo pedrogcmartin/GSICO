@@ -1,5 +1,5 @@
 <div align="center">
-   <h3 align="center">Structured Gaussian Splatting Compression Codec</h3>
+   <h3 align="center">Gaussian Splatting Image-based Compression (GSICO)</h3>
    <br />
 
   <p align="center">
