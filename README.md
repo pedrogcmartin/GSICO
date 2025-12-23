@@ -9,7 +9,7 @@
   </p>
 </div>
 
-The SGS code implementation is available in this repository. This repository is mainly based on the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering" and the paper "Compact 3D Scene Representation via Self-Organizing Gaussian Grids".
+The GSICO code implementation is available in this repository. This repository is mainly based on the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering" and the paper "Compact 3D Scene Representation via Self-Organizing Gaussian Grids".
 
 ## Qualitative results
 
@@ -140,14 +140,14 @@ The repository contains submodules, thus please check it out with
 
 ```shell
 # SSH
-git clone git@github.com:pedrogcmartin/SGS.git --recursive
+git clone git@github.com:pedrogcmartin/GSICO.git --recursive
 ```
 
 or
 
 ```shell
 # HTTPS
-git clone https://github.com/pedrogcmartin/SGS.git --recursive
+git clone https://github.com/pedrogcmartin/GSICO.git --recursive
 ```
 
 ## Python Environment
@@ -158,7 +158,7 @@ Installation with [micromamba](https://mamba.readthedocs.io/en/latest/installati
 
 ```shell
 micromamba env create --file environment.yml --channel-priority flexible -y
-micromamba activate sgs
+micromamba activate gsico
 ```
 
 
