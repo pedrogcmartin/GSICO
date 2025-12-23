@@ -1,4 +1,4 @@
-name: sgs
+name: gsico
 
 channels:
   - pytorch
