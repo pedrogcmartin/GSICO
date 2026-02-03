@@ -111,7 +111,8 @@ def focus_point_fn(poses: np.ndarray) -> np.ndarray:
   focus_pt = np.linalg.inv(mt_m.mean(0)) @ (mt_m @ origins).mean(0)[:, 0]
   return focus_pt
 
-def generate_ellipse_path(poses: np.ndarray,
+def generate_ellipse_path(edp : int,
+                          poses: np.ndarray,
                           n_frames: int = 120,
                           const_speed: bool = True,
                           z_variation: float = 0.,
@@ -123,7 +124,7 @@ def generate_ellipse_path(poses: np.ndarray,
   offset = np.array([center[0], center[1], 0])
 
   # Calculate scaling for ellipse axes based on input camera positions.
-  sc = np.percentile(np.abs(poses[:, :3, 3] - offset), 90, axis=0)
+  sc = np.percentile(np.abs(poses[:, :3, 3] - offset), edp, axis=0)
   # Use ellipse that is symmetric about the focal point in xy.
   low = -sc + offset
   high = sc + offset
@@ -161,41 +162,6 @@ def generate_ellipse_path(poses: np.ndarray,
 
   return np.stack([viewmatrix(center - p, up, p) for p in positions])
 
-
-# Constants for generate_spiral_path():
-NEAR_STRETCH = .9  # Push forward near bound for forward facing render path.
-FAR_STRETCH = 5.  # Push back far bound for forward facing render path.
-FOCUS_DISTANCE = .75  # Relative weighting of near, far bounds for render path.
-def generate_spiral_path(poses: np.ndarray,
-                         bounds: np.ndarray,
-                         n_frames: int = 120,
-                         n_rots: int = 2,
-                         zrate: float = .5) -> np.ndarray:
-  """Calculates a forward facing spiral path for rendering."""
-  # Find a reasonable 'focus depth' for this dataset as a weighted average
-  # of conservative near and far bounds in disparity space.
-  near_bound = bounds.min() * NEAR_STRETCH
-  far_bound = bounds.max() * FAR_STRETCH
-  # All cameras will point towards the world space point (0, 0, -focal).
-  focal = 1 / (((1 - FOCUS_DISTANCE) / near_bound + FOCUS_DISTANCE / far_bound))
-
-  # Get radii for spiral path using 90th percentile of camera positions.
-  positions = poses[:, :3, 3]
-  radii = np.percentile(np.abs(positions), 90, 0)
-  radii = np.concatenate([radii, [1.]])
-
-  # Generate poses for spiral path.
-  render_poses = []
-  cam2world = average_pose(poses)
-  up = poses[:, :3, 1].mean(0)
-  for theta in np.linspace(0., 2. * np.pi * n_rots, n_frames, endpoint=False):
-    t = radii * [np.cos(theta), -np.sin(theta), -np.sin(theta * zrate), 1.]
-    position = cam2world @ t
-    lookat = cam2world @ [0, 0, -focal, 1.]
-    z_axis = position - lookat
-    render_poses.append(viewmatrix(-z_axis, up, position))
-  render_poses = np.stack(render_poses, axis=0)
-  return render_poses
 
 def getWorld2View2(R, t, translate=np.array([.0, .0, .0]), scale=1.0):
     Rt = np.zeros((4, 4))
@@ -264,9 +230,12 @@ class RenderCamera(nn.Module):
         self.full_proj_transform = (self.world_view_transform.unsqueeze(0).bmm(self.projection_matrix.unsqueeze(0))).squeeze(0)
         self.camera_center = self.world_view_transform.inverse()[3, :3]
 
-def getRender360Cameras(train_cameras, n_frames: int = 240,  const_speed: bool = True, z_variation: float = 0.0, z_phase: float = 0.0):
+def getRender360Cameras(edp, train_cameras, n_frames: int = 240,  const_speed: bool = True, z_variation: float = 0.0, z_phase: float = 0.0):
     if len(train_cameras) == 0:
         raise ValueError("train_cameras is empty")
+    
+    else:
+       print(f"Using {len(train_cameras)} cameras to compute ellipse")
 
     ref_cam = train_cameras[0]
 
@@ -276,9 +245,7 @@ def getRender360Cameras(train_cameras, n_frames: int = 240,  const_speed: bool =
 
     # Canonicalize poses via PCA, generate ellipse path, then undo canonicalization
     poses, transform = transform_poses_pca(c2w)
-    poses = generate_ellipse_path(
-        poses, n_frames=n_frames, const_speed=const_speed, z_variation=z_variation, z_phase=z_phase
-    )
+    poses = generate_ellipse_path(edp, poses, n_frames=n_frames, const_speed=const_speed, z_variation=z_variation, z_phase=z_phase)
     poses = unpad_poses(np.linalg.inv(transform) @ pad_poses(poses))
 
     # Convert c2w to (R, T) expected by RenderCamera
@@ -292,7 +259,7 @@ def getRender360Cameras(train_cameras, n_frames: int = 240,  const_speed: bool =
     return render_cams
 
 def render_set(model_path, iteration, views, gaussians, pipeline, background):
-    render_path = os.path.join(model_path, "ours_{}".format(iteration), "renders360")
+    render_path = os.path.join(model_path, "renders360")
     makedirs(render_path, exist_ok=True)
 
     for idx, view in enumerate(tqdm(views, desc="Rendering progress")):
@@ -301,7 +268,7 @@ def render_set(model_path, iteration, views, gaussians, pipeline, background):
         
         torchvision.utils.save_image(rendering, os.path.join(render_path, '{0:05d}'.format(idx) + ".png"))
 
-def render_sets(dataset : ModelParams, iteration : int, pipeline : PipelineParams):
+def render_sets(edp : int, nframes : int, dataset : ModelParams, iteration : int, pipeline : PipelineParams):
     with torch.no_grad():
         gaussians = GaussianModel(dataset.sh_degree)
         scene = Scene(dataset, gaussians, load_iteration=iteration, shuffle=False)
@@ -309,7 +276,7 @@ def render_sets(dataset : ModelParams, iteration : int, pipeline : PipelineParam
         bg_color = [1,1,1] if dataset.white_background else [0, 0, 0]
         background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
 
-        render_set(dataset.model_path, scene.loaded_iter, getRender360Cameras(scene.getTrainCameras()), 
+        render_set(dataset.model_path, scene.loaded_iter, getRender360Cameras(edp, scene.getTrainCameras(), n_frames=nframes), 
                                                 gaussians, pipeline, background)
 
 def render_fn(views, gaussians, pipeline, background, use_amp):
@@ -327,6 +294,8 @@ if __name__ == "__main__":
     parser.add_argument("--skip_test", action="store_true")
     parser.add_argument("--quiet", action="store_true")
     parser.add_argument("-split", type=int, default=0)
+    parser.add_argument("-edp", type=int, default=90)
+    parser.add_argument("-nframes", type=int, default=240)
     args = get_combined_args(parser)
     
     print("Rendering " + args.model_path)
@@ -334,4 +303,4 @@ if __name__ == "__main__":
     # Initialize system state (RNG)
     safe_state(args.quiet)
 
-    render_sets(model.extract(args), args.iteration, pipeline.extract(args))
+    render_sets(args.edp, args.nframes, model.extract(args), args.iteration, pipeline.extract(args))
