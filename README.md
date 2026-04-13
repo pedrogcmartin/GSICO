@@ -1,5 +1,10 @@
 <div align="center">
-   <h3 align="center">Gaussian Splatting Image-based Compression (GSICO)</h3>
+   <h1 align="center">Gaussian Splatting Image-based Compression (GSICO)</h1>
+   <br />
+
+   Pedro Martin, António Rodrigues, João Ascenso, Maria Paula Queluz
+
+   Instituto de Telecomunicações, Instituto Superior Técnico, University of Lisbon
    <br />
 
   <p align="center">
@@ -8,6 +13,8 @@
     <br />
   </p>
 </div>
+
+[**Paper:**](https://arxiv.org/pdf/2601.14510)
 
 The GSICO code implementation is available in this repository. This repository is mainly based on the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering" and the paper "Compact 3D Scene Representation via Self-Organizing Gaussian Grids".
 
@@ -191,3 +198,7 @@ python decoder_scaffold.py --dataset tandt --scene truck --exp png_quant_sh_ours
 ```
 
 where the JPEG XL settings are controlled by the quality level (`--q`, from -inf to 100, being 100 mathematically lossless) and the effort level (`--e`, from 1 to 11) and the BB sorting block size can be adjusted using --block_size.
+
+## Citation
+
+P. Martin, A. Rodrigues, J. Ascenso, and M. P. Queluz, "Structured Image-based Coding for Efficient Gaussian Splatting Compression", arXiv preprint arXiv:2601.14510, 2026.
