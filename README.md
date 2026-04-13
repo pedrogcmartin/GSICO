@@ -14,9 +14,9 @@
   </p>
 </div>
 
-[**Paper:**](https://arxiv.org/pdf/2601.14510)
-
 The GSICO code implementation is available in this repository. This repository is mainly based on the official authors implementation associated with the paper "3D Gaussian Splatting for Real-Time Radiance Field Rendering" and the paper "Compact 3D Scene Representation via Self-Organizing Gaussian Grids".
+
+[**Paper**](https://arxiv.org/pdf/2601.14510)
 
 ## Qualitative results
 
