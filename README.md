@@ -28,9 +28,9 @@ Visual comparison across scenes. Columns: GT (reference), baseline models (3DGS/
       <th align="left">Scene</th>
       <th>GT</th>
       <th>3DGS</th>
-      <th>Ours w/ 3DGS</th>
+      <th>GSICO w/ 3DGS</th>
       <th>Scaffold-GS</th>
-      <th>Ours w/ Scaffold-GS</th>
+      <th>GSICO w/ Scaffold-GS</th>
     </tr>
   </thead>
   <tbody>
